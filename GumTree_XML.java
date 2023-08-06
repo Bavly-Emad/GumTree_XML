@@ -14,8 +14,8 @@ public class GumTree_XML {
         BufferedReader br = null;
         BufferedReader br1 = null;
         try {
-            br = new BufferedReader(new FileReader(new File("D:/Test1_right.txt")));
-            br1 = new BufferedReader(new FileReader(new File("D:/Test1_left.txt")));
+            br = new BufferedReader(new FileReader(new File("1st File Destination")));
+            br1 = new BufferedReader(new FileReader(new File("2nd File Destination")));
             String s = "";
             String s1 = "";
             String text = "";
