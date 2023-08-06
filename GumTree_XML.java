@@ -38,7 +38,22 @@ public class GumTree_XML {
                 System.out.println("Number of Lines: "+linesOfCode);
             }
             else{
-                
+                if(linesOfCode == linesOfCode1){
+                    while ((s = br.readLine()) != null && (s1 = br1.readLine()) != null) {
+                        if(s != s1)
+                            update++;
+                    }
+                }
+                else if(linesOfCode > linesOfCode1){
+                    insert = linesOfCode - linesOfCode1;
+                }
+                else if(linesOfCode < linesOfCode1){
+                    delete = linesOfCode1 - linesOfCode;
+                }
+                System.out.println("-----Summary-----");
+                System.out.println("Number of Inserts: " + insert);
+                System.out.println("Number of Updates: " + update);
+                System.out.println("Number of Deletes: " + delete);
             }
         } catch (FileNotFoundException ex) {
             Logger.getLogger(GumTree_XML.class.getName()).log(Level.SEVERE, null, ex);
