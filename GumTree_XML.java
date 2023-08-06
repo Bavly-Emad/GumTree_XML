@@ -11,8 +11,13 @@ import org.junit.Assert;
 
 public class GumTree_XML {
     public static void main(String[] args) throws IOException {
+        int update = 0;
+        int insert = 0;
+        int delete = 0;
         BufferedReader br = null;
         BufferedReader br1 = null;
+        int x = 0;
+        int x1 = 0;
         try {
             br = new BufferedReader(new FileReader(new File("1st File Destination")));
             br1 = new BufferedReader(new FileReader(new File("2nd File Destination")));
